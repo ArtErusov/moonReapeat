@@ -1,0 +1,25 @@
+:root {
+    --black:#3A3845;
+    --brown: #C69B7B;
+    --gray-light:#E5E5E5;
+    --gray:#A6A6A8;
+    /* --gray-dark:; */
+  }
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./font/Gilroy-Light.otf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./font/Gilroy-ExtraBold.otf');
+    font-weight: bold;
+}
+
+body{
+    font-family: 'Gilroy';
+    font-weight: normal;
+    font-size: 16px;
+}
+
