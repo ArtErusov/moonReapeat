@@ -1,0 +1,9 @@
+.breadCrumbs{
+    display: flex;
+    gap: 15px;
+    margin-top: 24px;
+}
+
+.breadCrumbs__passiv{
+    color: var(--gray);
+}

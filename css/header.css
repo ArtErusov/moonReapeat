@@ -1,0 +1,99 @@
+/* ============header=========== */
+.filling{
+    width: 100%;
+    background-color: #ffffff;
+    height: 96px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header__logo{
+    margin-top: 24px;
+}
+
+/* =================== */
+/* Проблема с покрасной элемента navActive не хочет его кравить, хотя при ховере красит без проблем */
+.header__nav {
+    margin-top: 40px;
+    display: flex;  
+    margin-left: 40px; 
+  }
+  .header__nav-item {
+    padding: 0 14px 5px;
+    position: relative;
+  }
+
+  .header__nav-item:hover { 
+    transition:0.3s;
+    color: var(--brown);
+  }
+  
+/* li{
+    color: #F7F6F5;
+  }
+li::after { 
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 2px;
+    width: 0;
+    background: var(--brown);
+  } */
+
+  .header__nav-item::after { 
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 2px;
+    width: 0;
+    background: var(--brown);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  }
+  
+  .header__nav-item:hover::after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+  /* ============= */
+  .header__input{
+    margin-top: 26px;
+    position: relative;
+  }
+  .header__input-search{
+    width: 320px;
+    padding-left:40px;
+    border-radius: 4px;
+    height: 44px;
+    border: 1px solid var(--gray-light);
+  }
+
+  .header__input-img{
+    position: absolute;
+    left: 12px;
+    top: 12px;
+  }
+
+  .header__person{
+    margin-top: 37px;
+  }
+
+  .header__person-account, .header__person-cart, .header__person-favorites{
+    cursor: pointer;
+    margin-left: 18px;
+  }
+
+  .header__person-cart{
+    margin-top: 2px;
+  }
+  .header__person-favorites{
+    margin-top: 6px;
+  }
