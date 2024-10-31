@@ -1,0 +1,73 @@
+.filling {
+  width: 100%;
+  background-color: #ffffff;
+  height: 96px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    margin-top: 24px;
+  }
+
+  &__nav {
+    margin-top: 40px;
+    display: flex;
+    margin-left: 40px;
+
+    &-item {
+      padding: 0 14px 5px;
+      position: relative;
+      font-weight: 500;
+      &:hover {
+        transition: 0.3s;
+        color: var(--brown);
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        display: block;
+        background: none repeat scroll 0 0 transparent;
+        height: 2px;
+        width: 0;
+        background: var(--brown);
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      }
+      &:hover::after {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+  &__input {
+    margin-top: 26px;
+    position: relative;
+    &-search {
+      width: 320px;
+      padding-left: 40px;
+      border-radius: 4px;
+      height: 44px;
+      border: 1px solid var(--gray-light);
+    }
+    &-img {
+      position: absolute;
+      left: 12px;
+      top: 12px;
+    }
+  }
+  &__person {
+    margin-top: 37px;
+    display: flex;
+    gap: 22px;
+    &-cart {
+      margin-top: 2px;
+    }
+    &-favorites {
+      margin-top: 6px;
+    }
+  }
+}

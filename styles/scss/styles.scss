@@ -1,0 +1,47 @@
+// sass --watch ./styles/scss/styles.scss ./styles/css/styles.css
+@import './main.scss';
+@import './reset.scss';
+@import './header.scss';
+
+:root {
+    --black:#3A3845;
+    --brown: #C69B7B;
+    --gray-main:#F7F6F5;
+    --gray-light:#E5E5E5;
+    --gray:#A6A6A8;
+    --gray-dark:#807F86;
+  }
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../../assets/font/Gilroy-Regular.woff2') format('woff2');
+    font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../../assets/font/Gilroy-Bold.woff2') format('woff2');
+    font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../../assets/font/Gilroy-Medium.woff2') format('woff2');
+    font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+body{
+    font-family: 'Gilroy';
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--black);
+    background-color: var(--gray-main);
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}

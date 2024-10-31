@@ -1,46 +1,352 @@
-@import url(./main.css);
-@import url(./reset.css);
-@import url(./header.css);
+.breadCrumbs {
+  display: flex;
+  gap: 15px;
+  margin-top: 24px;
+}
+
+.breadCrumbs__passiv {
+  color: var(--gray);
+  cursor: pointer;
+}
+
+.product {
+  display: flex;
+  margin-top: 24px;
+}
+
+.product__image {
+  max-width: 692px;
+  height: 464px;
+}
+
+.product__miniImg {
+  margin-top: 24px;
+  display: flex;
+  gap: 9px;
+}
+
+.description {
+  margin-left: 20px;
+}
+
+.description__title {
+  font-size: 24px;
+}
+
+.description__extra {
+  margin-top: 24px;
+  display: flex;
+}
+
+.description__extra-stars {
+  margin-right: 4px;
+  width: 20px;
+  height: 20px;
+}
+
+.description__extra-reviews {
+  color: var(--gray-dark);
+  margin-left: 12px;
+}
+
+.description__extra-stock {
+  margin-left: 40px;
+}
+
+.description__extra-inStock {
+  margin-left: 2px;
+  color: var(--gray-dark);
+}
+
+.descriotion__price {
+  margin-top: 24px;
+  display: flex;
+}
+
+.descriotion__price-discount {
+  font-size: 24px;
+}
+
+.descriotion__price-basic {
+  margin-left: 16px;
+  font-size: 24px;
+  color: var(--gray);
+}
+
+.descriotion__color {
+  margin-top: 24px;
+}
+
+.descriotion__color-flex {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+}
+
+.descriotion__color-flex-items {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.descriotion__active {
+  border: 1px solid var(--gray-dark);
+}
+
+.descriotion__color-flex-items:hover {
+  border: 1px solid var(--gray-dark);
+}
+
+.description__add {
+  margin-top: 24px;
+  display: flex;
+}
+
+.description__add-btn {
+  width: 386px;
+  height: 48px;
+  display: flex;
+  border-radius: 4px;
+  background-color: var(--black);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 8px;
+}
+
+.description__add-btn__icon {
+  width: 21px;
+  height: 21px;
+}
+
+.description__add-btn__text {
+  color: #fff;
+}
+
+.description__add-favor {
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  border: 2px solid var(--black);
+  border-radius: 4px;
+  margin-left: 20px;
+  padding: 12px;
+}
+
+.description__social {
+  display: flex;
+  margin-top: 24px;
+  gap: 8px;
+}
+
+.description__social-text {
+  margin-top: 5px;
+  margin-right: 24px;
+}
+
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  color: inherit;
+  text-decoration: none;
+  /* display: inline-block; */
+}
+
+a:hover {
+  /* color: inherit; */
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+.filling {
+  width: 100%;
+  background-color: #ffffff;
+  height: 96px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  margin-top: 24px;
+}
+.header__nav {
+  margin-top: 40px;
+  display: flex;
+  margin-left: 40px;
+}
+.header__nav-item {
+  padding: 0 14px 5px;
+  position: relative;
+  font-weight: 500;
+}
+.header__nav-item:hover {
+  transition: 0.3s;
+  color: var(--brown);
+}
+.header__nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  background: none repeat scroll 0 0 transparent;
+  height: 2px;
+  width: 0;
+  background: var(--brown);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+.header__nav-item:hover::after {
+  width: 100%;
+  left: 0;
+}
+.header__input {
+  margin-top: 26px;
+  position: relative;
+}
+.header__input-search {
+  width: 320px;
+  padding-left: 40px;
+  border-radius: 4px;
+  height: 44px;
+  border: 1px solid var(--gray-light);
+}
+.header__input-img {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+}
+.header__person {
+  margin-top: 37px;
+  display: flex;
+  gap: 22px;
+}
+.header__person-cart {
+  margin-top: 2px;
+}
+.header__person-favorites {
+  margin-top: 6px;
+}
 
 :root {
-    --black:#3A3845;
-    --brown: #C69B7B;
-    --gray-main:#F7F6F5;
-    --gray-light:#E5E5E5;
-    --gray:#A6A6A8;
-    --gray-dark:#807F86;
-  }
-@font-face {
-    font-family: 'Gilroy';
-    src: url('../../assets/font/Gilroy-Regular.woff2') format('woff2');
-    font-weight: 400;
-	font-style: normal;
-	font-display: swap;
+  --black:#3A3845;
+  --brown: #C69B7B;
+  --gray-main:#F7F6F5;
+  --gray-light:#E5E5E5;
+  --gray:#A6A6A8;
+  --gray-dark:#807F86;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../../assets/font/Gilroy-Bold.woff2') format('woff2');
-    font-weight: 600;
-	font-style: normal;
-	font-display: swap;
+  font-family: "Gilroy";
+  src: url("../../assets/font/Gilroy-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../../assets/font/Gilroy-Medium.woff2') format('woff2');
-    font-weight: 500;
-	font-style: normal;
-	font-display: swap;
+  font-family: "Gilroy";
+  src: url("../../assets/font/Gilroy-Bold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../assets/font/Gilroy-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "Gilroy";
+  font-weight: normal;
+  font-size: 16px;
+  color: var(--black);
+  background-color: var(--gray-main);
 }
 
-body{
-    font-family: 'Gilroy';
-    font-weight: normal;
-    font-size: 16px;
-    color: var(--black);
-    background-color: var(--gray-main);
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-}
+
+/*# sourceMappingURL=styles.css.map */
