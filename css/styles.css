@@ -8,20 +8,25 @@
   }
 @font-face {
     font-family: 'Gilroy';
-    src: url('./font/Gilroy-Light.otf');
-    font-weight: normal;
+    src: url('./font/Gilroy-Regular.woff2') format('woff2');
+    font-weight: 400;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('./font/Gilroy-ExtraBold.otf');
-    font-weight: bold;
+    src: url('./font/Gilroy-Bold.woff2') format('woff2');
+    font-weight: 600;
+	font-style: normal;
+	font-display: swap;
 }
-/* medium не работает */
 @font-face {
     font-family: 'Gilroy';
-    src: url('./font/gilroy-medium.ttf');
-    font-weight: medium;
+    src: url('./font/Gilroy-Medium.woff2') format('woff2');
+    font-weight: 500;
+	font-style: normal;
+	font-display: swap;
 }
 
 body{
