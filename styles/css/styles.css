@@ -1,3 +1,7 @@
+@import url(./main.css);
+@import url(./reset.css);
+@import url(./header.css);
+
 :root {
     --black:#3A3845;
     --brown: #C69B7B;
@@ -8,7 +12,7 @@
   }
 @font-face {
     font-family: 'Gilroy';
-    src: url('./font/Gilroy-Regular.woff2') format('woff2');
+    src: url('../../assets/font/Gilroy-Regular.woff2') format('woff2');
     font-weight: 400;
 	font-style: normal;
 	font-display: swap;
@@ -16,14 +20,14 @@
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('./font/Gilroy-Bold.woff2') format('woff2');
+    src: url('../../assets/font/Gilroy-Bold.woff2') format('woff2');
     font-weight: 600;
 	font-style: normal;
 	font-display: swap;
 }
 @font-face {
     font-family: 'Gilroy';
-    src: url('./font/Gilroy-Medium.woff2') format('woff2');
+    src: url('../../assets/font/Gilroy-Medium.woff2') format('woff2');
     font-weight: 500;
 	font-style: normal;
 	font-display: swap;
