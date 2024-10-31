@@ -13,26 +13,29 @@
 <body>
     <!-- =================================================Header================================================= -->
     <header class="filling">
-        <div class="container">
-            <div class="header">
+        <div class="header container">
+            <a href="/">
                 <img class="header__logo" src="./img/logoBig.svg" alt="logo">
+            </a>
+            <nav>
                 <ul class="header__nav">
                     <li><a class="header__nav-item "href="#">Home</a></li>
                     <li><a class="navActive header__nav-item " href="#">Shop</a></li>
                     <li><a class="header__nav-item" href="#">About</a></li>
                     <li><a class="header__nav-item" href="#">Contact</a></li>
                 </ul>
-                <!-- обернул в div что-бы привязать img -->
-                <div class="header__input">
-                    <input class="header__input-search"  type="text" placeholder="Search item...">
-                    <img class="header__input-img" src="./img/Search.svg" alt="">
-                </div>
-                <div class="header__person">
-                    <img class="header__person-favorites" src="./img/svg/icons/favorites.svg" alt="">
-                    <img class="header__person-cart" src="./img/cart.svg" alt="">
-                    <img class="header__person-account" src="./img/account.svg" alt="">
-                </div>
+            </nav>
+            <!-- обернул в div что-бы привязать img -->
+            <div class="header__input">
+                <input class="header__input-search"  type="text" placeholder="Search item...">
+                <img class="header__input-img" src="./img/Search.svg" alt="">
             </div>
+            <nav>
+                <ul class="header__person">
+                    <li><a href="/"><img class="header__person-favorites" src="./img/svg/icons/favorites.svg" alt=""></a></li>
+                    <li><a href="/"><img class="header__person-cart" src="./img/cart.svg" alt=""></a></li>
+                    <li><a href="/"><img class="header__person-account" src="./img/account.svg" alt=""></a></li>
+            </nav></ul>
         </div>
     </header>
 <!-- ==================================================main================================================== -->
