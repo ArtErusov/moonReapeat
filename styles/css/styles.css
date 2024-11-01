@@ -447,6 +447,90 @@ legend {
   stroke: var(--brown);
 }
 
+.fillingFooter {
+  width: 100%;
+  height: 361px;
+  background-color: var(--black);
+  margin-top: 130px;
+  color: #fff;
+}
+
+.footer__flex {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__info img {
+  margin-top: 40px;
+}
+.footer__info-text {
+  width: 304px;
+  margin-top: 40px;
+  color: var(--gray);
+}
+.footer__info-btn {
+  margin-top: 24px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  width: 240px;
+  height: 48px;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.footer__info-btn:hover {
+  transition: 0.3s;
+  border: 1px solid var(--brown);
+}
+.footer__info-btn:hover p {
+  transition: 0.3s;
+  color: var(--brown);
+}
+.footer__info-btn:hover svg {
+  transition: 0.3s;
+  stroke: var(--brown);
+}
+.footer__info-btn p {
+  margin-top: 12px;
+  font-weight: 600;
+}
+.footer__info-btn svg {
+  stroke: #fff;
+}
+.footer__nav {
+  margin-top: 40px;
+  display: flex;
+}
+.footer__nav-title {
+  margin-left: 80px;
+  margin-bottom: 24px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.footer__nav-link {
+  margin-bottom: 12px;
+  margin-left: 80px;
+  font-weight: 500;
+  color: var(--gray);
+}
+.footer__nav-link:hover {
+  transition: 0.5s;
+  color: #fff;
+}
+.footer__bottom {
+  text-align: center;
+}
+.footer__bottom div {
+  width: 100%;
+  margin: 40px auto 0;
+  height: 2px;
+  background-color: #4d4a59;
+}
+.footer__bottom p {
+  margin-top: 24px;
+  color: var(--gray-dark);
+}
+
 :root {
   --black:#3A3845;
   --brown: #C69B7B;
