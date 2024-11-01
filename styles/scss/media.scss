@@ -10,12 +10,56 @@
     &__burger{
       display: block;
     }
+
     
-    }}
+    
+    
+    }
+
+//     .product {
+//         display: flex;
+//         margin-top: 24px;
+//         &__img {
+//           display: grid;
+//           grid-template-columns: repeat(3, minmax(50px, 132px));
+//           gap: 9px;
+//           &-main {
+//             grid-column: span 3;
+//           }
+//           &-mini {
+//             width: 100%;
+//           }
+//         }
+//       }
+}
     
     @media screen and (max-width: 650px){
       .header__input{
         display: none;
       }
-    }
+      
     
+   
+    }
+
+// similar
+@media screen and (max-width: 1120px){ 
+ .similar__list{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    }
+}
+
+@media screen and (max-width: 860px){
+
+    .similar__list{
+       margin-top: 40px;
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       gap: 20px;
+   
+       }
+   }

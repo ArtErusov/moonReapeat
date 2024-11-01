@@ -20,21 +20,20 @@
   }
 }
 
+
 .product {
   display: flex;
   margin-top: 24px;
-
-  &__image {
-    max-width: 692px;
-    height: 464px;
-    cursor: pointer;
-  }
-
-  &__miniImg {
-    margin-top: 24px;
-    display: flex;
+  &__img {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(50px, 132px));
     gap: 9px;
-    cursor: pointer;
+    &-main {
+      grid-column: span 5;
+    }
+    &-mini {
+      width: 100%;
+    }
   }
 }
 
@@ -99,7 +98,7 @@
         height: 40px;
         border-radius: 4px;
         cursor: pointer;
-        
+
         &:hover {
           border: 1px solid var(--gray-dark);
         }
@@ -126,9 +125,9 @@
       cursor: pointer;
       gap: 8px;
 
-      &:hover{
+      &:hover {
         transition: 0.5s;
-       background-color: var(--brown);
+        background-color: var(--brown);
       }
 
       &__icon {
@@ -151,18 +150,18 @@
       margin-left: 20px;
       padding: 15px 0 0 14px;
 
-      &:hover{
+      &:hover {
         transition: 0.3s;
         border: 1px solid var(--brown);
 
-        svg{
+        svg {
           transition: 0.3s;
           stroke: var(--brown);
           fill: var(--brown);
         }
       }
 
-      svg{
+      svg {
         fill: var(--gray-main);
         stroke: var(--black);
       }
@@ -173,10 +172,10 @@
     display: flex;
     margin-top: 31px;
     gap: 8px;
-    svg{
+    svg {
       fill: var(--gray-dark);
       cursor: pointer;
-      &:hover{
+      &:hover {
         transition: 0.5s;
         fill: var(--brown);
       }
@@ -187,21 +186,21 @@
       margin-right: 24px;
     }
   }
-  &__accordion{
+  &__accordion {
     margin-top: 31px;
     width: 488px;
     height: 203px;
     border-radius: 4px;
     background-color: #fff;
 
-    &-separator{
+    &-separator {
       width: 440px;
       height: 1px;
       background-color: var(--gray-light);
       margin: 0 auto;
     }
 
-    &-container{
+    &-container {
       display: flex;
       justify-content: space-between;
       cursor: pointer;
@@ -211,43 +210,43 @@
       border-radius: 4px;
       border: 1px solid #fff;
 
-      &:hover{
+      &:hover {
         transition: 0.3s;
         border-radius: 4px;
         border: 1px solid var(--brown);
       }
 
-      p{
+      p {
         margin-top: 22px;
         font-size: 20px;
         font-weight: 600;
       }
 
-      svg{
+      svg {
         margin-top: 5px;
       }
     }
   }
 }
 
-.similar{
+.similar {
   margin-top: 130px;
 
-  &__header{
+  &__header {
     display: flex;
     justify-content: space-between;
 
-    p{
+    p {
       font-size: 40px;
       font-weight: 600;
       text-transform: uppercase;
     }
 
-    &-btn{
+    &-btn {
       display: flex;
       gap: 16px;
 
-      div{
+      div {
         text-align: center;
         padding-top: 11px;
         width: 44px;
@@ -255,77 +254,74 @@
         border-radius: 4px;
       }
 
-      &__active{
+      &__active {
         border: 1px solid var(--black);
         cursor: pointer;
 
-        svg{
+        svg {
           stroke: var(--black);
         }
 
-        &:hover{
+        &:hover {
           border: 1px solid var(--brown);
 
-          svg{
+          svg {
             stroke: var(--brown);
           }
         }
       }
 
-      &__notActive{
-          cursor: default;
-          border: 1px solid var(--gray-light);
+      &__notActive {
+        cursor: default;
+        border: 1px solid var(--gray-light);
 
-          svg{
-            stroke: var(--gray-light);
-          }
+        svg {
+          stroke: var(--gray-light);
+        }
       }
     }
   }
 
-  &__list{
+  &__list {
     margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 
-    &-product{
+    &-product {
       position: relative;
-
-    width: 285px;
-    height: 424px;
-    background-color: #fff;
+      width: 285px;
+      height: 424px;
+      background-color: #fff;
     }
 
-    svg{
+    svg {
       position: absolute;
       stroke: var(--black);
       right: 20px;
       top: 20px;
       cursor: pointer;
 
-      &:hover{
+      &:hover {
         transition: 0.1s;
         stroke: var(--brown);
         fill: var(--brown);
       }
     }
 
-    h3{
+    h3 {
       margin: 16px 0 0 16px;
       font-weight: 600;
       font-size: 18px;
     }
-    p{
-      margin: 8px 0 0 16px; 
+    p {
+      margin: 8px 0 0 16px;
       color: var(--gray-dark);
       font-weight: 500;
     }
   }
-
 }
 
-
-.star-filled{
-fill: var(--brown);
+.star-filled {
+  fill: var(--brown);
 }

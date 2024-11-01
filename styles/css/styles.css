@@ -21,16 +21,16 @@
   display: flex;
   margin-top: 24px;
 }
-.product__image {
-  max-width: 692px;
-  height: 464px;
-  cursor: pointer;
-}
-.product__miniImg {
-  margin-top: 24px;
-  display: flex;
+.product__img {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(50px, 132px));
   gap: 9px;
-  cursor: pointer;
+}
+.product__img-main {
+  grid-column: span 5;
+}
+.product__img-mini {
+  width: 100%;
 }
 
 .description {
@@ -543,6 +543,22 @@ legend {
 @media screen and (max-width: 650px) {
   .header__input {
     display: none;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .similar__list {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .similar__list {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 }
 :root {
