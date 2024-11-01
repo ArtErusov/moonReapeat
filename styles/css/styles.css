@@ -414,14 +414,17 @@ legend {
   margin-top: 26px;
   position: relative;
 }
-.header__input-search {
+.header__input input {
   width: 320px;
   padding-left: 40px;
   border-radius: 4px;
   height: 44px;
   border: 1px solid var(--gray-light);
 }
-.header__input-img {
+.header__input input:focus {
+  border: 1px solid var(--brown);
+}
+.header__input svg {
   position: absolute;
   left: 12px;
   top: 12px;
@@ -437,14 +440,9 @@ legend {
 .header__person-favorites {
   margin-top: 5px;
 }
-.header__svg {
-  stroke: var(--black);
-  fill: #ffffff;
-}
-.header__svg:hover {
-  transition: 0.3s;
-  fill: var(--brown);
-  stroke: var(--brown);
+.header__burger {
+  margin-top: 32px;
+  display: none;
 }
 
 .fillingFooter {
@@ -531,6 +529,22 @@ legend {
   color: var(--gray-dark);
 }
 
+@media screen and (max-width: 1050px) {
+  .header__nav {
+    display: none;
+  }
+  .header__person {
+    display: none;
+  }
+  .header__burger {
+    display: block;
+  }
+}
+@media screen and (max-width: 650px) {
+  .header__input {
+    display: none;
+  }
+}
 :root {
   --black:#3A3845;
   --brown: #C69B7B;
@@ -572,6 +586,22 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.svg {
+  stroke: var(--black);
+  fill: rgba(255, 255, 255, 0);
+}
+.svg:hover {
+  transition: 0.3s;
+  fill: var(--brown);
+  stroke: var(--brown);
+}
+
+@media screen and (max-width: 1240px) {
+  .container {
+    padding: 0 20px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

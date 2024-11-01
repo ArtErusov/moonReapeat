@@ -11,35 +11,35 @@
     <!-- =================================================Header================================================= -->
     <header class="filling">
         <div class="header container">
-            <a href="/">
+            <a href="#">
                 <img class="header__logo" src="./assets/img/logoBig.svg" alt="logo">
             </a>
             <nav>
                 <ul class="header__nav">
                     <li><a class="header__nav-item "href="#">Home</a></li>
-                    <li><a class="navActive header__nav-item " href="#">Shop</a></li>
+                    <li><a class="header__nav-item " href="#">Shop</a></li>
                     <li><a class="header__nav-item" href="#">About</a></li>
                     <li><a class="header__nav-item" href="#">Contact</a></li>
                 </ul>
             </nav>
             <div class="header__input">
-                <input class="header__input-search"  type="text" placeholder="Search item...">
-                <svg class="header__input-img" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <input type="text" placeholder="Search item...">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M18 18L13.6034 13.6034M1 8.32759C1 4.28067 4.28067 1 8.32759 1C12.3745 1 15.6552 4.28067 15.6552 8.32759C15.6552 12.3745 12.3745 15.6552 8.32759 15.6552C4.28067 15.6552 1 12.3745 1 8.32759Z" stroke="#A6A6A8" stroke-width="1.59375" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
             </div>
             <nav>
                 <ul class="header__person">
                     <li>
-                        <a href="/">
-                            <svg class="header__person-favorites header__svg" width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <a href="#">
+                            <svg class="header__person-favorites svg" width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.49413 2.73892C7.79472 0.835864 4.96079 0.323942 2.83149 2.06658C0.702198 3.80922 0.402424 6.7228 2.07457 8.7839L9.49413 15.6552L16.9137 8.7839C18.586 6.7228 18.3228 3.7909 16.1568 2.06658C13.9909 0.342279 11.1937 0.835864 9.49413 2.73892Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </a>
                     </li>
                     <li>
-                        <a href="/">
-                            <svg class="header__person-cart header__svg" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <a href="#">
+                            <svg class="header__person-cart svg" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M18.3529 22.6004C19.1352 22.6004 19.7693 21.9662 19.7693 21.184C19.7693 20.4017 19.1352 19.7676 18.3529 19.7676C17.5707 19.7676 16.9365 20.4017 16.9365 21.184C16.9365 21.9662 17.5707 22.6004 18.3529 22.6004Z" />
                                 <path d="M8.43691 22.6004C9.21917 22.6004 9.85332 21.9662 9.85332 21.184C9.85332 20.4017 9.21917 19.7676 8.43691 19.7676C7.65465 19.7676 7.02051 20.4017 7.02051 21.184C7.02051 21.9662 7.65465 22.6004 8.43691 22.6004Z" />
                                 <path d="M5.24921 5.24918H21.5379L19.2189 15.1046C18.9178 16.3842 17.776 17.2885 16.4615 17.2885H10.6167C9.33129 17.2885 8.20705 16.4231 7.87815 15.1806L5.24921 5.24918ZM5.24921 5.24918L4.18691 1H1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -47,8 +47,8 @@
                          </a>
                   </li>
                     <li>
-                        <a href="/">
-                             <svg class="header__person-account header__svg" width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <a href="#">
+                             <svg class="header__person-account svg" width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M3.45497 22.6H18.8059C20.507 22.6 21.8173 21.1373 21.023 19.6332C19.8544 17.4206 17.1904 14.7793 11.1305 14.7793C5.07053 14.7793 2.40651 17.4206 1.23797 19.6332C0.443579 21.1373 1.7539 22.6 3.45497 22.6Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M11.1305 10.6828C13.8043 10.6828 15.9719 8.5152 15.9719 5.84138C15.9719 3.16756 13.8043 1 11.1305 1C8.45663 1 6.28906 3.16756 6.28906 5.84138C6.28906 8.5152 8.45663 10.6828 11.1305 10.6828Z"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -56,6 +56,15 @@
                     </li>
                 </ul>
             </nav>
+            <div class="header__burger">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.2002 4.96582H28.8002" stroke="#3A3845" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3.2002 27.0352H28.8002Z" fill="#3A3845"/>
+                    <path d="M3.2002 27.0352H28.8002" stroke="#595667" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3.2002 16H28.8002Z" fill="#3A3845"/>
+                    <path d="M3.2002 16H28.8002" stroke="#595667" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
         </div>
     </header>
 <!-- ==================================================product================================================== -->

@@ -26,7 +26,7 @@
         transition: 0.3s;
         color: var(--brown);
       }
-      
+
       &::after {
         content: "";
         position: absolute;
@@ -51,15 +51,19 @@
     margin-top: 26px;
     position: relative;
 
-    &-search {
+    input {
       width: 320px;
       padding-left: 40px;
       border-radius: 4px;
       height: 44px;
       border: 1px solid var(--gray-light);
+
+      &:focus {
+        border: 1px solid var(--brown);
+      }
     }
 
-    &-img {
+    svg {
       position: absolute;
       left: 12px;
       top: 12px;
@@ -76,16 +80,11 @@
     }
 
     &-favorites {
-      margin-top: 5px; 
+      margin-top: 5px;
     }
   }
-  &__svg{
-    stroke: var(--black);
-      fill: #ffffff;
-      &:hover{
-        transition: 0.3s;
-        fill: var(--brown);
-        stroke: var(--brown);
-      }
+  &__burger {
+    margin-top: 32px;
+    display: none;
   }
 }

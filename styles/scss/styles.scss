@@ -3,6 +3,7 @@
 @import './reset.scss';
 @import './header.scss';
 @import './footer.scss';
+@import './media.scss';
 
 :root {
     --black:#3A3845;
@@ -45,4 +46,21 @@ body{
 .container{
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.svg{
+    stroke: var(--black);
+      fill: #ffffff00;
+      &:hover{
+        transition: 0.3s;
+        fill: var(--brown);
+        stroke: var(--brown);
+      }
+  }
+
+
+@media screen and (max-width: 1240px){
+ .container{
+    padding: 0 20px;
+ }
 }

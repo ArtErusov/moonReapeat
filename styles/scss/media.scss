@@ -1,0 +1,21 @@
+// header
+@media screen and (max-width: 1050px){
+    .header{
+      &__nav{
+      display: none;
+    }
+    &__person{
+      display: none;
+    }
+    &__burger{
+      display: block;
+    }
+    
+    }}
+    
+    @media screen and (max-width: 650px){
+      .header__input{
+        display: none;
+      }
+    }
+    
