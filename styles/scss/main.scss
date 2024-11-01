@@ -27,12 +27,14 @@
   &__image {
     max-width: 692px;
     height: 464px;
+    cursor: pointer;
   }
 
   &__miniImg {
     margin-top: 24px;
     display: flex;
     gap: 9px;
+    cursor: pointer;
   }
 }
 
@@ -208,16 +210,19 @@
       padding: 0 24px;
       border-radius: 4px;
       border: 1px solid #fff;
+
       &:hover{
         transition: 0.3s;
         border-radius: 4px;
         border: 1px solid var(--brown);
       }
+
       p{
         margin-top: 22px;
         font-size: 20px;
         font-weight: 600;
       }
+
       svg{
         margin-top: 5px;
       }
@@ -225,7 +230,100 @@
   }
 }
 
+.similar{
+  margin-top: 130px;
 
+  &__header{
+    display: flex;
+    justify-content: space-between;
+
+    p{
+      font-size: 40px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    &-btn{
+      display: flex;
+      gap: 16px;
+
+      div{
+        text-align: center;
+        padding-top: 11px;
+        width: 44px;
+        height: 44px;
+        border-radius: 4px;
+      }
+
+      &__active{
+        border: 1px solid var(--black);
+        cursor: pointer;
+
+        svg{
+          stroke: var(--black);
+        }
+
+        &:hover{
+          border: 1px solid var(--brown);
+
+          svg{
+            stroke: var(--brown);
+          }
+        }
+      }
+
+      &__notActive{
+          cursor: default;
+          border: 1px solid var(--gray-light);
+
+          svg{
+            stroke: var(--gray-light);
+          }
+      }
+    }
+  }
+
+  &__list{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    &-product{
+      position: relative;
+
+    width: 285px;
+    height: 424px;
+    background-color: #fff;
+    }
+
+    svg{
+      position: absolute;
+      stroke: var(--black);
+      right: 20px;
+      top: 20px;
+      cursor: pointer;
+
+      &:hover{
+        transition: 0.1s;
+        stroke: var(--brown);
+        fill: var(--brown);
+      }
+    }
+
+    h3{
+      margin: 16px 0 0 16px;
+      font-weight: 600;
+      font-size: 18px;
+    }
+    p{
+      margin: 8px 0 0 16px; 
+      color: var(--gray-dark);
+      font-weight: 500;
+    }
+  }
+
+}
 
 
 .star-filled{

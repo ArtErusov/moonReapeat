@@ -24,11 +24,13 @@
 .product__image {
   max-width: 692px;
   height: 464px;
+  cursor: pointer;
 }
 .product__miniImg {
   margin-top: 24px;
   display: flex;
   gap: 9px;
+  cursor: pointer;
 }
 
 .description {
@@ -191,6 +193,84 @@
 }
 .description__accordion-container svg {
   margin-top: 5px;
+}
+
+.similar {
+  margin-top: 130px;
+}
+.similar__header {
+  display: flex;
+  justify-content: space-between;
+}
+.similar__header p {
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.similar__header-btn {
+  display: flex;
+  gap: 16px;
+}
+.similar__header-btn div {
+  text-align: center;
+  padding-top: 11px;
+  width: 44px;
+  height: 44px;
+  border-radius: 4px;
+}
+.similar__header-btn__active {
+  border: 1px solid var(--black);
+  cursor: pointer;
+}
+.similar__header-btn__active svg {
+  stroke: var(--black);
+}
+.similar__header-btn__active:hover {
+  border: 1px solid var(--brown);
+}
+.similar__header-btn__active:hover svg {
+  stroke: var(--brown);
+}
+.similar__header-btn__notActive {
+  cursor: default;
+  border: 1px solid var(--gray-light);
+}
+.similar__header-btn__notActive svg {
+  stroke: var(--gray-light);
+}
+.similar__list {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.similar__list-product {
+  position: relative;
+  width: 285px;
+  height: 424px;
+  background-color: #fff;
+}
+.similar__list svg {
+  position: absolute;
+  stroke: var(--black);
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+.similar__list svg:hover {
+  transition: 0.1s;
+  stroke: var(--brown);
+  fill: var(--brown);
+}
+.similar__list h3 {
+  margin: 16px 0 0 16px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.similar__list p {
+  margin: 8px 0 0 16px;
+  color: var(--gray-dark);
+  font-weight: 500;
 }
 
 .star-filled {
