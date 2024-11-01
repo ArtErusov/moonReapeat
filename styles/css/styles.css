@@ -41,10 +41,11 @@
   margin-top: 24px;
   display: flex;
 }
-.description__extra-stars {
+.description__extra-star {
   margin-right: 4px;
   width: 20px;
   height: 20px;
+  stroke: var(--brown);
 }
 .description__extra-reviews {
   color: var(--gray-dark);
@@ -104,30 +105,60 @@
   cursor: pointer;
   gap: 8px;
 }
+.description__add-btn:hover {
+  transition: 0.5s;
+  background-color: var(--brown);
+}
 .description__add-btn__icon {
   width: 21px;
   height: 21px;
 }
 .description__add-btn__text {
   color: #fff;
+  font-weight: 500;
 }
 .description__add-favor {
   cursor: pointer;
   width: 48px;
   height: 48px;
-  border: 2px solid var(--black);
+  border: 1px solid var(--black);
   border-radius: 4px;
   margin-left: 20px;
-  padding: 12px;
+  padding: 15px 0 0 14px;
+}
+.description__add-favor:hover {
+  transition: 0.3s;
+  border: 1px solid var(--brown);
+}
+.description__add-favor:hover svg {
+  transition: 0.3s;
+  stroke: var(--brown);
+  fill: var(--brown);
+}
+.description__add-favor svg {
+  fill: #fff;
+  stroke: var(--black);
 }
 .description__social {
   display: flex;
   margin-top: 24px;
   gap: 8px;
 }
+.description__social svg {
+  fill: var(--gray-dark);
+  cursor: pointer;
+}
+.description__social svg:hover {
+  transition: 0.5s;
+  fill: var(--brown);
+}
 .description__social-text {
   margin-top: 5px;
   margin-right: 24px;
+}
+
+.star-filled {
+  fill: var(--brown);
 }
 
 /* Reset and base styles  */
@@ -285,10 +316,19 @@ legend {
   gap: 22px;
 }
 .header__person-cart {
-  margin-top: 2px;
+  margin-top: 1px;
 }
 .header__person-favorites {
-  margin-top: 6px;
+  margin-top: 5px;
+}
+.header__svg {
+  stroke: var(--black);
+  fill: #ffffff;
+}
+.header__svg:hover {
+  transition: 0.3s;
+  fill: var(--brown);
+  stroke: var(--brown);
 }
 
 :root {

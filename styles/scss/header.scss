@@ -21,10 +21,12 @@
       padding: 0 14px 5px;
       position: relative;
       font-weight: 500;
+
       &:hover {
         transition: 0.3s;
         color: var(--brown);
       }
+      
       &::after {
         content: "";
         position: absolute;
@@ -37,15 +39,18 @@
         background: var(--brown);
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
       }
+
       &:hover::after {
         width: 100%;
         left: 0;
       }
     }
   }
+
   &__input {
     margin-top: 26px;
     position: relative;
+
     &-search {
       width: 320px;
       padding-left: 40px;
@@ -53,21 +58,34 @@
       height: 44px;
       border: 1px solid var(--gray-light);
     }
+
     &-img {
       position: absolute;
       left: 12px;
       top: 12px;
     }
   }
+
   &__person {
     margin-top: 37px;
     display: flex;
     gap: 22px;
+
     &-cart {
-      margin-top: 2px;
+      margin-top: 1px;
     }
+
     &-favorites {
-      margin-top: 6px;
+      margin-top: 5px; 
     }
+  }
+  &__svg{
+    stroke: var(--black);
+      fill: #ffffff;
+      &:hover{
+        transition: 0.3s;
+        fill: var(--brown);
+        stroke: var(--brown);
+      }
   }
 }
