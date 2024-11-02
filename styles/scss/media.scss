@@ -1,65 +1,111 @@
 // header
-@media screen and (max-width: 1050px){
-    .header{
-      &__nav{
+@media screen and (max-width: 1050px) {
+  .header {
+    &__nav {
       display: none;
     }
-    &__person{
+    &__person {
       display: none;
     }
-    &__burger{
+    &__burger {
       display: block;
     }
-
-    
-    
-    
-    }
-
-//     .product {
-//         display: flex;
-//         margin-top: 24px;
-//         &__img {
-//           display: grid;
-//           grid-template-columns: repeat(3, minmax(50px, 132px));
-//           gap: 9px;
-//           &-main {
-//             grid-column: span 3;
-//           }
-//           &-mini {
-//             width: 100%;
-//           }
-//         }
-//       }
+  }
 }
-    
-    @media screen and (max-width: 650px){
-      .header__input{
-        display: none;
+
+@media screen and (max-width: 650px) {
+  .header__input {
+    display: none;
+  }
+}
+
+// main
+@media screen and (max-width: 1200px) {
+  .product {
+    &__img {
+      display: grid;
+      gap: 9px;
+      grid-template-columns:  repeat(4, 123px); 
+        &-main {
+          grid-column: span 4;
+        }
+        &-mini {
+          margin-top: 0px;
+        }
+
       }
-      
-    
-   
-    }
+  }
+}
+@media screen and (max-width: 760px) {
+  .product {
+    display: block;
+    &__img {
+      display: grid;
+      gap: 9px;
+      grid-template-columns:  repeat(4, 123px); 
+        &-main {
+          grid-column: span 3;
+        }
+        &-mini {
+          margin-top: 0px;
+
+        }
+
+      }
+  }
+}
+
+
 
 // similar
-@media screen and (max-width: 1120px){ 
- .similar__list{
-    margin-top: 40px;
-    display: grid;
+@media screen and (max-width: 1120px) {
+  .similar__list {
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-
-    }
+  }
 }
 
-@media screen and (max-width: 860px){
+@media screen and (max-width: 920px) {
+  .similar__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
-    .similar__list{
-       margin-top: 40px;
-       display: grid;
-       grid-template-columns: repeat(2, 1fr);
-       gap: 20px;
-   
-       }
-   }
+
+//footer
+@media screen and (max-width: 980px) {
+  .footer__nav{ 
+    &-title {
+      margin-left: 40px;
+    }
+    &-link {
+      margin-left: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .footer{
+    &__flex{
+      display: block;
+      align-items: center;
+    }
+  }
+.resetting__margin{
+  margin-left: 0px;
+}
+}
+
+@media screen and (max-width: 600px) {
+  .footer__nav{ 
+   display: grid;
+   gap:40px;
+   grid-template-columns: 150px 150px;
+   &-title {
+    margin-left:0px;
+  }
+  &-link {
+    margin-left:0px;
+  }
+
+  }
+}

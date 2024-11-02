@@ -18,21 +18,20 @@
     color: var(--gray);
   }
 }
-
 .product {
   display: flex;
   margin-top: 24px;
   &__img {
     display: grid;
-    grid-template-columns: repeat(5, minmax(50px, 132px));
     gap: 9px;
-    &-main {
-      grid-column: span 5;
+    grid-template-columns:  repeat(5, 123px); ;
+      &-main {
+        grid-column: span 5;
+      }
+      &-mini {
+        margin-top: 15px;
+      }
     }
-    &-mini {
-      width: 100%;
-    }
-  }
 }
 
 .description {
