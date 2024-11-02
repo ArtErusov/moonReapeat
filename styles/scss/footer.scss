@@ -65,15 +65,18 @@
         margin-bottom: 12px;
         margin-left: 80px;
         font-weight: 500;
-        color: var(--gray);
         &:hover{
             transition: 0.5s;
             color: #fff;
+        }
+        a{
+          color: var(--gray);
         }
     }
   }
   &__bottom{
     text-align: center;
+    
     div{
      width: 100%;
      margin: 40px auto 0;

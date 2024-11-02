@@ -1,66 +1,74 @@
 // sass --watch ./styles/scss/styles.scss ./styles/css/styles.css
-@import './main.scss';
-@import './reset.scss';
-@import './header.scss';
-@import './footer.scss';
-@import './media.scss';
+@import "./main.scss";
+@import "./reset.scss";
+@import "./header.scss";
+@import "./footer.scss";
+@import "./media.scss";
 
 :root {
-    --black:#3A3845;
-    --brown: #C69B7B;
-    --gray-main:#F7F6F5;
-    --gray-light:#E5E5E5;
-    --gray:#A6A6A8;
-    --gray-dark:#807F86;
+  --black: #3a3845;
+  --brown: #c69b7b;
+  --gray-main: #f7f6f5;
+  --gray-light: #e5e5e5;
+  --gray: #a6a6a8;
+  --gray-dark: #807f86;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../assets/font/Gilroy-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../assets/font/Gilroy-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../assets/font/Gilroy-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../assets/font/Gilroy-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Gilroy";
+  font-weight: normal;
+  font-size: 16px;
+  color: var(--black);
+  background-color: var(--gray-main);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.svg {
+  stroke: var(--black);
+  fill: #ffffff00;
+  cursor: pointer;
+  &:hover {
+    transition: 0.3s;
+    fill: var(--brown);
+    stroke: var(--brown);
   }
-@font-face {
-    font-family: 'Gilroy';
-    src: url('../../assets/font/Gilroy-Regular.woff2') format('woff2');
-    font-weight: 400;
-	font-style: normal;
-	font-display: swap;
 }
 
-@font-face {
-    font-family: 'Gilroy';
-    src: url('../../assets/font/Gilroy-Bold.woff2') format('woff2');
-    font-weight: 600;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-    font-family: 'Gilroy';
-    src: url('../../assets/font/Gilroy-Medium.woff2') format('woff2');
-    font-weight: 500;
-	font-style: normal;
-	font-display: swap;
-}
-
-body{
-    font-family: 'Gilroy';
-    font-weight: normal;
-    font-size: 16px;
-    color: var(--black);
-    background-color: var(--gray-main);
-}
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.svg{
-    stroke: var(--black);
-      fill: #ffffff00;
-      &:hover{
-        transition: 0.3s;
-        fill: var(--brown);
-        stroke: var(--brown);
-      }
-  }
-
-
-@media screen and (max-width: 1240px){
- .container{
+@media screen and (max-width: 1240px) {
+  .container {
     padding: 0 20px;
- }
+  }
 }

@@ -4,11 +4,10 @@
   margin-top: 24px;
   font-weight: 500;
 }
-.breadCrumbs__passiv {
+.breadCrumbs a {
   color: var(--gray);
-  cursor: pointer;
 }
-.breadCrumbs__passiv:hover {
+.breadCrumbs a:hover {
   transition: 0.3s;
   color: var(--brown);
 }
@@ -38,6 +37,7 @@
 }
 .description__title {
   font-size: 24px;
+  font-weight: 600;
 }
 .description__extra {
   margin-top: 24px;
@@ -51,7 +51,13 @@
 }
 .description__extra-reviews {
   color: var(--gray-dark);
+  width: 115px;
   margin-left: 12px;
+}
+.description__extra-reviews:hover {
+  transition: 0.3s;
+  color: var(--black);
+  font-weight: 500;
 }
 .description__extra-stock {
   margin-left: 40px;
@@ -63,6 +69,7 @@
 .description__price {
   margin-top: 24px;
   display: flex;
+  font-weight: 600;
 }
 .description__price-discount {
   font-size: 24px;
@@ -75,21 +82,24 @@
 .description__color {
   margin-top: 24px;
 }
+.description__color p {
+  font-weight: 500;
+}
 .description__color-flex {
   margin-top: 8px;
   display: flex;
   gap: 8px;
 }
-.description__color-flex__items {
+.description__color-flex div {
   width: 40px;
   height: 40px;
   border-radius: 4px;
   cursor: pointer;
 }
-.description__color-flex__items:hover {
+.description__color-flex div:hover {
   border: 1px solid var(--gray-dark);
 }
-.description__active {
+.description__color-active {
   border: 1px solid var(--gray-dark);
 }
 .description__add {
@@ -137,10 +147,6 @@
   stroke: var(--brown);
   fill: var(--brown);
 }
-.description__add-favor svg {
-  fill: var(--gray-main);
-  stroke: var(--black);
-}
 .description__social {
   display: flex;
   margin-top: 31px;
@@ -154,7 +160,8 @@
   transition: 0.5s;
   fill: var(--brown);
 }
-.description__social-text {
+.description__social p {
+  font-weight: 500;
   margin-top: 5px;
   margin-right: 24px;
 }
@@ -252,15 +259,8 @@
 }
 .similar__list svg {
   position: absolute;
-  stroke: var(--black);
   right: 20px;
   top: 20px;
-  cursor: pointer;
-}
-.similar__list svg:hover {
-  transition: 0.1s;
-  stroke: var(--brown);
-  fill: var(--brown);
 }
 .similar__list h3 {
   margin: 16px 0 0 16px;
@@ -292,7 +292,6 @@
 
 /* Links */
 a, a:link, a:visited {
-  color: inherit;
   text-decoration: none;
   /* display: inline-block; */
 }
@@ -389,6 +388,7 @@ legend {
   padding: 0 14px 5px;
   position: relative;
   font-weight: 500;
+  color: var(--black);
 }
 .header__nav-item:hover {
   transition: 0.3s;
@@ -509,11 +509,13 @@ legend {
   margin-bottom: 12px;
   margin-left: 80px;
   font-weight: 500;
-  color: var(--gray);
 }
 .footer__nav-link:hover {
   transition: 0.5s;
   color: #fff;
+}
+.footer__nav-link a {
+  color: var(--gray);
 }
 .footer__bottom {
   text-align: center;
@@ -562,12 +564,12 @@ legend {
   }
 }
 :root {
-  --black:#3A3845;
-  --brown: #C69B7B;
-  --gray-main:#F7F6F5;
-  --gray-light:#E5E5E5;
-  --gray:#A6A6A8;
-  --gray-dark:#807F86;
+  --black: #3a3845;
+  --brown: #c69b7b;
+  --gray-main: #f7f6f5;
+  --gray-light: #e5e5e5;
+  --gray: #a6a6a8;
+  --gray-dark: #807f86;
 }
 
 @font-face {
@@ -579,15 +581,22 @@ legend {
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("../../assets/font/Gilroy-Bold.woff2") format("woff2");
+  src: url("../../assets/font/Gilroy-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../assets/font/Gilroy-Semibold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("../../assets/font/Gilroy-Medium.woff2") format("woff2");
-  font-weight: 500;
+  src: url("../../assets/font/Gilroy-Bold.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -607,6 +616,7 @@ body {
 .svg {
   stroke: var(--black);
   fill: rgba(255, 255, 255, 0);
+  cursor: pointer;
 }
 .svg:hover {
   transition: 0.3s;
