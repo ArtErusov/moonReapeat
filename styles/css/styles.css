@@ -553,6 +553,8 @@ legend {
 }
 @media screen and (max-width: 1200px) {
   .product {
+    max-width: 900px;
+    margin: 24px auto 0;
     display: block;
   }
   .product__img {
@@ -575,8 +577,15 @@ legend {
   .product .description {
     margin: 24px 0 0;
   }
+  .breadCrumbs {
+    max-width: 900px;
+    margin: 24px auto 0;
+  }
 }
 @media screen and (max-width: 900px) {
+  .product {
+    max-width: 600px;
+  }
   .product__img {
     display: block;
   }
@@ -589,15 +598,28 @@ legend {
   .product__img-mini {
     margin: 20px 0 0 0;
   }
+  .breadCrumbs {
+    max-width: 600px;
+  }
 }
 @media screen and (max-width: 1120px) {
   .similar__list {
+    max-width: 895px;
+    margin: 24px auto 0;
     grid-template-columns: repeat(3, 1fr);
+  }
+  .similar__header {
+    margin: 0 auto;
+    max-width: 895px;
   }
 }
 @media screen and (max-width: 920px) {
   .similar__list {
+    max-width: 590px;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .similar__header {
+    max-width: 590px;
   }
 }
 @media screen and (max-width: 980px) {
