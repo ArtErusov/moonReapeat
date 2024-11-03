@@ -22,16 +22,18 @@
   display: flex;
   margin-top: 24px;
   &__img {
-    display: grid;
-    gap: 9px;
-    grid-template-columns:  repeat(5, 123px); ;
-      &-main {
-        grid-column: span 5;
-      }
-      &-mini {
-        margin-top: 15px;
-      }
+    &-container {
+      margin-top: 24px;
     }
+
+    &-main {
+      width: 692px;
+      height: 464px;
+    }
+    &-mini:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
 }
 
 .description {
@@ -92,7 +94,7 @@
 
   &__color {
     margin-top: 24px;
-    p{
+    p {
       font-weight: 500;
     }
 
@@ -193,13 +195,13 @@
 
   &__accordion {
     margin-top: 31px;
-    width: 488px;
+    max-width: 488px;
     height: 203px;
     border-radius: 4px;
     background-color: #fff;
 
     &-separator {
-      width: 440px;
+      max-width: 440px;
       height: 1px;
       background-color: var(--gray-light);
       margin: 0 auto;

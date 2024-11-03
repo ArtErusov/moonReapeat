@@ -1,9 +1,9 @@
 // sass --watch ./styles/scss/styles.scss ./styles/css/styles.css
-@import "./main.scss";
-@import "./reset.scss";
-@import "./header.scss";
-@import "./footer.scss";
-@import "./media.scss";
+@import "main";
+@import "reset";
+@import "header";
+@import "footer";
+@import "media";
 
 :root {
   --black: #3a3845;
@@ -46,7 +46,7 @@
 
 body {
   font-family: "Gilroy";
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   color: var(--black);
   background-color: var(--gray-main);
@@ -64,11 +64,5 @@ body {
     transition: 0.3s;
     fill: var(--brown);
     stroke: var(--brown);
-  }
-}
-
-@media screen and (max-width: 1240px) {
-  .container {
-    padding: 0 20px;
   }
 }

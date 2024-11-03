@@ -1,3 +1,9 @@
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
 // header
 @media screen and (max-width: 1050px) {
   .header {
@@ -22,40 +28,51 @@
 // main
 @media screen and (max-width: 1200px) {
   .product {
-    &__img {
-      display: grid;
-      gap: 9px;
-      grid-template-columns:  repeat(4, 123px); 
-        &-main {
-          grid-column: span 4;
-        }
-        &-mini {
-          margin-top: 0px;
-        }
-
-      }
-  }
-}
-@media screen and (max-width: 760px) {
-  .product {
     display: block;
+    // margin: 0 auto;
     &__img {
-      display: grid;
-      gap: 9px;
-      grid-template-columns:  repeat(4, 123px); 
+      display: flex;
+
+      &-container {
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+      }
+
+      &-mini:not(:last-child) {
+        margin-right: 0px;
+      }
+      &-mini {
+        margin-left: 20px;
+        width: 115px;
+      }
+    }
+    .description {
+      margin: 24px 0 0;
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .product {
+    &__img {
+      display: block;
+      &-container{
+         flex-direction: row;
+         
+      }
         &-main {
-          grid-column: span 3;
+          height: auto;
         }
         &-mini {
-          margin-top: 0px;
 
+          margin: 20px 0 0 0;
         }
 
       }
   }
 }
-
-
 
 // similar
 @media screen and (max-width: 1120px) {
@@ -70,10 +87,9 @@
   }
 }
 
-
 //footer
 @media screen and (max-width: 980px) {
-  .footer__nav{ 
+  .footer__nav {
     &-title {
       margin-left: 40px;
     }
@@ -83,29 +99,28 @@
   }
 }
 
-@media screen and (max-width: 850px) {
-  .footer{
-    &__flex{
+@media screen and (max-width: 870px) {
+  .footer {
+    &__flex {
       display: block;
       align-items: center;
     }
   }
-.resetting__margin{
-  margin-left: 0px;
-}
+  .resetting__margin {
+    margin-left: 0px;
+  }
 }
 
 @media screen and (max-width: 600px) {
-  .footer__nav{ 
-   display: grid;
-   gap:40px;
-   grid-template-columns: 150px 150px;
-   &-title {
-    margin-left:0px;
-  }
-  &-link {
-    margin-left:0px;
-  }
-
+  .footer__nav {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 150px 150px;
+    &-title {
+      margin-left: 0px;
+    }
+    &-link {
+      margin-left: 0px;
+    }
   }
 }
