@@ -294,12 +294,16 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    overflow-x: auto;
 
     &-product {
       position: relative;
       width: 285px;
       height: 424px;
       background-color: #fff;
+    }
+    &-mobile{
+      display: none;
     }
 
     svg {
@@ -318,6 +322,10 @@
       color: var(--gray-dark);
       font-weight: 500;
     }
+  }
+
+  &__mobile{
+    display: none;
   }
 }
 
