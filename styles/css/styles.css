@@ -89,13 +89,13 @@
   display: flex;
   gap: 8px;
 }
-.description__color-flex div {
+.description__color-flex li {
   width: 40px;
   height: 40px;
   border-radius: 4px;
   cursor: pointer;
 }
-.description__color-flex div:hover {
+.description__color-flex li:hover {
   border: 1px solid var(--gray-dark);
 }
 .description__color-active {
@@ -372,35 +372,34 @@ legend {
   display: block;
 }
 
-.filling {
+.header {
   width: 100%;
   background-color: #ffffff;
   height: 96px;
 }
-
-.header {
+.header__container {
   display: flex;
   justify-content: space-between;
 }
 .header__logo {
   margin-top: 24px;
 }
-.header__nav {
+.header__menu {
   margin-top: 40px;
   display: flex;
   margin-left: 40px;
 }
-.header__nav-item {
+.header__menu-link {
   padding: 0 14px 5px;
   position: relative;
   font-weight: 500;
   color: var(--black);
 }
-.header__nav-item:hover {
+.header__menu-link:hover {
   transition: 0.3s;
   color: var(--brown);
 }
-.header__nav-item::after {
+.header__menu-link::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -412,43 +411,56 @@ legend {
   background: var(--brown);
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
-.header__nav-item:hover::after {
+.header__menu-link:hover::after {
   width: 100%;
   left: 0;
 }
-.header__input {
+.header__search {
   margin-top: 26px;
   position: relative;
 }
-.header__input input {
+.header__search-input {
   width: 320px;
   padding-left: 40px;
   border-radius: 4px;
   height: 44px;
   border: 1px solid var(--gray-light);
 }
-.header__input input:focus {
+.header__search-input:focus {
   border: 1px solid var(--brown);
 }
-.header__input svg {
+.header__search-button {
   position: absolute;
   left: 12px;
   top: 12px;
+  stroke: #a6a6a8;
 }
-.header__person {
+.header__user-list {
   margin-top: 37px;
   display: flex;
   gap: 22px;
 }
-.header__person-cart {
+.header__icon-cart {
   margin-top: 1px;
 }
-.header__person-favorites {
+.header__icon-favorites {
   margin-top: 5px;
 }
 .header__burger {
   margin-top: 32px;
   display: none;
+}
+
+.header__person {
+  display: flex;
+}
+.header__person-cart {
+  margin-top: 1px;
+}
+
+.header__search-input:focus + .header__search-button svg,
+.header__search-button:focus svg {
+  stroke: var(--brown);
 }
 
 .fillingFooter {
@@ -543,10 +555,10 @@ legend {
   }
 }
 @media screen and (max-width: 1050px) {
-  .header__nav {
+  .header__navigation {
     display: none;
   }
-  .header__person {
+  .header__user {
     display: none;
   }
   .header__burger {
@@ -554,7 +566,7 @@ legend {
   }
 }
 @media screen and (max-width: 650px) {
-  .header__input {
+  .header__search {
     display: none;
   }
 }

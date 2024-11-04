@@ -7,10 +7,10 @@
 // ===============header===============
 @media screen and (max-width: 1050px) {
   .header {
-    &__nav {
+    &__navigation {
       display: none;
     }
-    &__person {
+    &__user {
       display: none;
     }
     &__burger {
@@ -20,7 +20,7 @@
 }
 
 @media screen and (max-width: 650px) {
-  .header__input {
+  .header__search {
     display: none;
   }
 }

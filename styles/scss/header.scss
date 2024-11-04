@@ -1,23 +1,23 @@
-.filling {
+.header {
   width: 100%;
   background-color: #ffffff;
   height: 96px;
-}
 
-.header {
-  display: flex;
-  justify-content: space-between;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__logo {
     margin-top: 24px;
   }
 
-  &__nav {
+  &__menu {
     margin-top: 40px;
     display: flex;
     margin-left: 40px;
 
-    &-item {
+    &-link {
       padding: 0 14px 5px;
       position: relative;
       font-weight: 500;
@@ -48,11 +48,11 @@
     }
   }
 
-  &__input {
+  &__search {
     margin-top: 26px;
     position: relative;
 
-    input {
+    &-input {
       width: 320px;
       padding-left: 40px;
       border-radius: 4px;
@@ -64,18 +64,21 @@
       }
     }
 
-    svg {
+    &-button {
       position: absolute;
       left: 12px;
       top: 12px;
+      stroke: #a6a6a8;
     }
   }
 
-  &__person {
+  &__user-list{
     margin-top: 37px;
     display: flex;
     gap: 22px;
+  }
 
+  &__icon{
     &-cart {
       margin-top: 1px;
     }
@@ -84,8 +87,26 @@
       margin-top: 5px;
     }
   }
+
+    
+  
+
   &__burger {
     margin-top: 32px;
     display: none;
   }
+}
+
+.header {
+  &__person {
+    display: flex;
+    &-cart {
+      margin-top: 1px;
+    }
+  }
+}
+
+.header__search-input:focus + .header__search-button svg,
+.header__search-button:focus svg {
+  stroke: var(--brown);
 }
