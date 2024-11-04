@@ -1,4 +1,4 @@
-.breadcrumbs {
+.bread-crumbs {
   display: flex;
   gap: 15px;
   margin-top: 24px;
@@ -68,10 +68,10 @@
   }
 
   &-stock {
-    &__label {
+    &_label {
       margin-left: 40px;
     }
-    &__status {
+    &_status {
       margin-left: 2px;
       color: var(--gray-dark);
     }
@@ -279,7 +279,7 @@
       stroke: var(--black);
     }
 
-    &__notactive {
+    &_not-active {
       cursor: default;
       border: 1px solid var(--gray-light);
       &:hover {

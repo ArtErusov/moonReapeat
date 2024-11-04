@@ -27,7 +27,7 @@
 
 // ===============main===============
 @media screen and (max-width: 1200px) {
-  .breadcrumbs {
+  .bread-crumbs {
     max-width: 900px;
     margin: 24px auto 0;
   }
@@ -84,7 +84,7 @@
     }
   }
 
-  .breadcrumbs {
+  .bread-crumbs {
     max-width: 600px;
   }
 }
@@ -150,7 +150,7 @@
       }
 
       &-title {
-        margin: 8px 0 0 8px;
+        margin: 8px 8px 0;
         font-weight: 500;
         font-size: 16px;
       }
@@ -188,7 +188,7 @@
     display: block;
     align-items: center;
   }
-  .resetting__margin {
+  .resetting-margin {
     margin-left: 0px;
   }
   .footer__info{

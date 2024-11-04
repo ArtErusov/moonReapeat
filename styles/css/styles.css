@@ -1,17 +1,17 @@
-.breadcrumbs {
+.bread-crumbs {
   display: flex;
   gap: 15px;
   margin-top: 24px;
   font-weight: 500;
 }
-.breadcrumbs__link {
+.bread-crumbs__link {
   color: var(--gray);
 }
-.breadcrumbs__link:hover {
+.bread-crumbs__link:hover {
   transition: 0.3s;
   color: var(--brown);
 }
-.breadcrumbs__separator {
+.bread-crumbs__separator {
   cursor: default;
   color: var(--gray);
 }
@@ -59,10 +59,10 @@
   color: var(--black);
   font-weight: 500;
 }
-.product__extra-stock__label {
+.product__extra-stock_label {
   margin-left: 40px;
 }
-.product__extra-stock__status {
+.product__extra-stock_status {
   margin-left: 2px;
   color: var(--gray-dark);
 }
@@ -247,17 +247,17 @@
 .similar__header-button svg {
   stroke: var(--black);
 }
-.similar__header-button__notactive {
+.similar__header-button_not-active {
   cursor: default;
   border: 1px solid var(--gray-light);
 }
-.similar__header-button__notactive:hover {
+.similar__header-button_not-active:hover {
   border: 1px solid var(--gray-light);
 }
-.similar__header-button__notactive:hover svg {
+.similar__header-button_not-active:hover svg {
   stroke: var(--gray-light);
 }
-.similar__header-button__notactive svg {
+.similar__header-button_not-active svg {
   stroke: var(--gray-light);
 }
 
@@ -516,11 +516,11 @@ legend {
   transition: 0.3s;
   stroke: var(--brown);
 }
-.footer__info-button__text {
+.footer__info-button-text {
   margin-top: 12px;
   font-weight: 600;
 }
-.footer__info-button__arrow {
+.footer__info-button-arrow {
   margin-top: 12px;
   stroke: #fff;
 }
@@ -587,7 +587,7 @@ legend {
   }
 }
 @media screen and (max-width: 1200px) {
-  .breadcrumbs {
+  .bread-crumbs {
     max-width: 900px;
     margin: 24px auto 0;
   }
@@ -634,7 +634,7 @@ legend {
   .product__images-thumbnail {
     margin: 20px 0 0 0;
   }
-  .breadcrumbs {
+  .bread-crumbs {
     max-width: 600px;
   }
 }
@@ -687,7 +687,7 @@ legend {
     top: 10px;
   }
   .similar__list-title {
-    margin: 8px 0 0 8px;
+    margin: 8px 8px 0;
     font-weight: 500;
     font-size: 16px;
   }
@@ -716,7 +716,7 @@ legend {
     display: block;
     align-items: center;
   }
-  .resetting__margin {
+  .resetting-margin {
     margin-left: 0px;
   }
   .footer__info {
