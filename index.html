@@ -289,7 +289,7 @@
                     </article>
                 </li>
             </ul>
-            <div class="similar__mobile-btn">
+            <div class="similar__mobile">
                 <button class="similar__header-button__notactive similar__header-button">
                     <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2.75595 9.93262L22.4004 9.93262" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
@@ -306,59 +306,57 @@
         </section>
     </main>
  <!-- ============================================footer=============================================== -->   
-    <footer class="fillingFooter">
-        <div class="footer container">
-            <div class="footer__flex">
-                <div class="footer__info">
-                    <a href="#"><img src="./assets/img/logoFooter.svg" alt=""></a>
+    <footer class="footer">
+         <div class="footer__content container">
+            <div class="footer__info">
+                    <a class="footer__info-logo" href="#"><img src="./assets/img/logoFooter.svg" alt=""></a>
                     <p class="footer__info-text">Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam mauris sed ma</p>
-                    <div class="footer__info-btn">
-                        <p>Get started</p>
-                        <svg width="24" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <button class="footer__info-button">
+                        <span class="footer__info-button__text" >Get started</span>
+                        <svg class="footer__info-button__arrow" width="24" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M20.6444 10L1 10" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
                             <path d="M13 2L21.3111 9.93333L13 17.8667" stroke-width="1.5" stroke-linecap="square"/>
                         </svg>
-                    </div>
-                </div>
-                <nav>
-                    <ul class="footer__nav">
-                        <li>
-                            <ul>
-                                <li class="footer__nav-title resetting__margin">About us</li>
-                                <li class="footer__nav-link resetting__margin"><a href="#">Mission</a></li>
-                                <li class="footer__nav-link resetting__margin"><a href="#">Our team</a></li>
-                                <li class="footer__nav-link resetting__margin"><a href="#">Awards</a></li>
-                                <li class="footer__nav-link resetting__margin"><a href="#">Testimonials</a></li>
-                                <li class="footer__nav-link resetting__margin"><a href="#">Privacy policy</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul>
-                                <li class="footer__nav-title">Services</li>
-                                <li class="footer__nav-link"><a href="#">Web design</a></li>
-                                <li class="footer__nav-link"><a href="#">Web development</a></li>
-                                <li class="footer__nav-link"><a href="#">Mobile design</a></li>
-                                <li class="footer__nav-link"><a href="#">UX/UI design</a></li>
-                                <li class="footer__nav-link"><a href="#">Branding design</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul>
-                                <li class="footer__nav-title">Portfolio</li>
-                                <li class="footer__nav-link"><a href="#">Corporate websites</a></li>
-                                <li class="footer__nav-link"><a href="#">E-commerce</a></li>
-                                <li class="footer__nav-link"><a href="#">Mobile apps</a></li>
-                                <li class="footer__nav-link"><a href="#">Landing pages</a></li>
-                                <li class="footer__nav-link"><a href="#">UX/UI projects</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav> 
-            </div>  
-            <div class="footer__bottom">
-                <div></div>
-                <p>Copyright © 2023 Moon | All Rights Reserved | Terms and Conditions | Privacy Policy</p>
+                    </button>
             </div>
+            <nav class="footer__navigation">
+                <ul class="footer__navigation-list">
+                    <li class="footer__navigation-group">
+                            <h3 class="footer__navigation-title resetting__margin">About us</h3>
+                            <ul class="footer__navigation-links">
+                                <li class="footer__navigation-link resetting__margin"><a href="#">Mission</a></li>
+                                <li class="footer__navigation-link resetting__margin"><a href="#">Our team</a></li>
+                                <li class="footer__navigation-link resetting__margin"><a href="#">Awards</a></li>
+                                <li class="footer__navigation-link resetting__margin"><a href="#">Testimonials</a></li>
+                                <li class="footer__navigation-link resetting__margin"><a href="#">Privacy policy</a></li>
+                            </ul>
+                    </li>
+                    <li class="footer__navigation-group">
+                            <h3 class="footer__navigation-title">Services</h3>
+                            <ul class="footer__navigation-links">
+                                <li class="footer__navigation-link"><a href="#">Web design</a></li>
+                                <li class="footer__navigation-link"><a href="#">Web development</a></li>
+                                <li class="footer__navigation-link"><a href="#">Mobile design</a></li>
+                                <li class="footer__navigation-link"><a href="#">UX/UI design</a></li>
+                                <li class="footer__navigation-link"><a href="#">Branding design</a></li>
+                            </ul>
+                    </li>
+                    <li  class="footer__navigation-group">
+                            <h3 class="footer__navigation-title">Portfolio</h3>
+                            <ul class="footer__navigation-links">
+                                <li class="footer__navigation-link"><a href="#">Corporate websites</a></li>
+                                <li class="footer__navigation-link"><a href="#">E-commerce</a></li>
+                                <li class="footer__navigation-link"><a href="#">Mobile apps</a></li>
+                                <li class="footer__navigation-link"><a href="#">Landing pages</a></li>
+                                <li class="footer__navigation-link"><a href="#">UX/UI projects</a></li>
+                            </ul>
+                    </li>
+                </ul>
+           </nav> 
+        </div>  
+        <div class="footer__bottom">
+                <div class="footer__bottom-separator" ></div>
+                <p class="footer__bottom-text">Copyright © 2023 Moon | All Rights Reserved | <a href="#" class="footer__bottom-link">Terms and Conditions</a> | <a href="#" class="footer__bottom-link">Privacy Policy</a></p>
         </div>
     </footer>
 </body>

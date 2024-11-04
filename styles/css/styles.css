@@ -212,6 +212,9 @@
 .similar {
   margin-top: 130px;
 }
+.similar__mobile {
+  display: none;
+}
 
 .similar__header {
   display: flex;
@@ -271,13 +274,13 @@
   height: 424px;
   background-color: #fff;
 }
-.similar__list-mobile {
-  display: none;
-}
 .similar__list-icon {
   position: absolute;
   right: 20px;
   top: 20px;
+}
+.similar__list-mobile {
+  display: none;
 }
 .similar__list-title {
   margin: 16px 0 0 16px;
@@ -471,19 +474,19 @@ legend {
   stroke: var(--brown);
 }
 
-.fillingFooter {
+.footer {
   width: 100%;
   height: auto;
   background-color: var(--black);
   margin-top: 130px;
   color: #fff;
 }
-
-.footer__flex {
+.footer__content {
   display: flex;
   justify-content: space-between;
 }
-.footer__info img {
+
+.footer__info {
   margin-top: 40px;
 }
 .footer__info-text {
@@ -491,7 +494,7 @@ legend {
   margin-top: 40px;
   color: var(--gray);
 }
-.footer__info-btn {
+.footer__info-button {
   margin-top: 24px;
   display: flex;
   gap: 10px;
@@ -500,60 +503,65 @@ legend {
   height: 48px;
   border-radius: 4px;
   border: 1px solid #fff;
-  cursor: pointer;
 }
-.footer__info-btn:hover {
+.footer__info-button:hover {
   transition: 0.3s;
   border: 1px solid var(--brown);
 }
-.footer__info-btn:hover p {
+.footer__info-button:hover span {
   transition: 0.3s;
   color: var(--brown);
 }
-.footer__info-btn:hover svg {
+.footer__info-button:hover svg {
   transition: 0.3s;
   stroke: var(--brown);
 }
-.footer__info-btn p {
+.footer__info-button__text {
   margin-top: 12px;
   font-weight: 600;
 }
-.footer__info-btn svg {
+.footer__info-button__arrow {
+  margin-top: 12px;
   stroke: #fff;
 }
-.footer__nav {
+
+.footer__navigation-list {
   margin-top: 40px;
   display: flex;
 }
-.footer__nav-title {
+.footer__navigation-title {
   margin-left: 80px;
   margin-bottom: 24px;
   font-size: 20px;
   font-weight: 500;
 }
-.footer__nav-link {
+.footer__navigation-link {
   margin-bottom: 12px;
   margin-left: 80px;
   font-weight: 500;
 }
-.footer__nav-link:hover {
+.footer__navigation-link a {
+  color: var(--gray);
+}
+.footer__navigation-link a:hover {
   transition: 0.5s;
   color: #fff;
 }
-.footer__nav-link a {
-  color: var(--gray);
-}
+
 .footer__bottom {
   text-align: center;
 }
-.footer__bottom div {
+.footer__bottom-separator {
   width: 100%;
   margin: 40px auto 0;
   height: 2px;
   background-color: #4d4a59;
 }
-.footer__bottom p {
+.footer__bottom-text {
   padding: 24px 0;
+  color: var(--gray-dark);
+}
+.footer__bottom-link {
   color: var(--gray-dark);
 }
 
@@ -688,7 +696,7 @@ legend {
     color: var(--gray-dark);
     font-weight: 500;
   }
-  .similar__mobile-btn {
+  .similar__mobile {
     margin-top: 24px;
     display: flex;
     gap: 16px;
@@ -696,32 +704,35 @@ legend {
   }
 }
 @media screen and (max-width: 980px) {
-  .footer__nav-title {
+  .footer__navigation-title {
     margin-left: 40px;
   }
-  .footer__nav-link {
+  .footer__navigation-link {
     margin-left: 40px;
   }
 }
 @media screen and (max-width: 870px) {
-  .footer__flex {
+  .footer__content {
     display: block;
     align-items: center;
   }
   .resetting__margin {
     margin-left: 0px;
   }
+  .footer__info {
+    padding-top: 40px;
+  }
 }
 @media screen and (max-width: 600px) {
-  .footer__nav {
+  .footer__navigation-list {
     display: grid;
     gap: 40px;
     grid-template-columns: 150px 150px;
   }
-  .footer__nav-title {
+  .footer__navigation-title {
     margin-left: 0px;
   }
-  .footer__nav-link {
+  .footer__navigation-link {
     margin-left: 0px;
   }
 }

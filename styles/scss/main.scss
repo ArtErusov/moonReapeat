@@ -18,6 +18,7 @@
     color: var(--gray);
   }
 }
+
 .product {
   display: flex;
   margin-top: 24px;
@@ -239,10 +240,14 @@
   }
 }
 
-
 .similar {
   margin-top: 130px;
+
+  &__mobile{
+    display: none;
+  }
 }
+
 .similar__header {
   display: flex;
   justify-content: space-between;
@@ -303,14 +308,13 @@
       height: 424px;
       background-color: #fff;
     }
-    &-mobile {
-      display: none;
-    }
-
     &-icon {
       position: absolute;
       right: 20px;
       top: 20px;
+    }
+    &-mobile{
+      display: none;
     }
 
     &-title {
