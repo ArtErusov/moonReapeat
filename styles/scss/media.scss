@@ -109,6 +109,8 @@
   }
 }
 
+
+
 @media screen and (max-width: 920px) {
   .similar {
     &__list {
@@ -121,13 +123,13 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .similar {
     &__header {
       display: flex;
       justify-content: center;
 
-      &-btn {
+      &-buttons {
         display: none;
       }
     }
@@ -143,18 +145,18 @@
         background-color: #fff;
       }
 
-      svg {
+      &-icon {
         position: absolute;
         right: 10px;
         top: 10px;
       }
 
-      h3 {
+      &-title {
         margin: 8px 0 0 8px;
         font-weight: 500;
         font-size: 16px;
       }
-      p {
+      &-price {
         margin: 8px 0 0 8px;
         color: var(--gray-dark);
         font-weight: 500;
@@ -166,40 +168,6 @@
       display: flex;
       gap: 16px;
       justify-content: flex-end;
-
-      div {
-        text-align: center;
-        padding-top: 11px;
-        width: 44px;
-        height: 44px;
-        border-radius: 4px;
-      }
-
-      &__active {
-        border: 1px solid var(--black);
-        cursor: pointer;
-
-        svg {
-          stroke: var(--black);
-        }
-
-        &:hover {
-          border: 1px solid var(--brown);
-
-          svg {
-            stroke: var(--brown);
-          }
-        }
-      }
-
-      &__notActive {
-        cursor: default;
-        border: 1px solid var(--gray-light);
-
-        svg {
-          stroke: var(--gray-light);
-        }
-      }
     }
   }
 }

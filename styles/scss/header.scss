@@ -12,73 +12,13 @@
     margin-top: 24px;
   }
 
-  &__menu {
-    margin-top: 40px;
-    display: flex;
-    margin-left: 40px;
-
-    &-link {
-      padding: 0 14px 5px;
-      position: relative;
-      font-weight: 500;
-      color: var(--black);
-
-      &:hover {
-        transition: 0.3s;
-        color: var(--brown);
-      }
-
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        display: block;
-        background: none repeat scroll 0 0 transparent;
-        height: 2px;
-        width: 0;
-        background: var(--brown);
-        transition: width 0.3s ease 0s, left 0.3s ease 0s;
-      }
-
-      &:hover::after {
-        width: 100%;
-        left: 0;
-      }
-    }
-  }
-
-  &__search {
-    margin-top: 26px;
-    position: relative;
-
-    &-input {
-      width: 320px;
-      padding-left: 40px;
-      border-radius: 4px;
-      height: 44px;
-      border: 1px solid var(--gray-light);
-
-      &:focus {
-        border: 1px solid var(--brown);
-      }
-    }
-
-    &-button {
-      position: absolute;
-      left: 12px;
-      top: 12px;
-      stroke: #a6a6a8;
-    }
-  }
-
-  &__user-list{
+  &__user-list {
     margin-top: 37px;
     display: flex;
     gap: 22px;
   }
 
-  &__icon{
+  &__icon {
     &-cart {
       margin-top: 1px;
     }
@@ -87,9 +27,12 @@
       margin-top: 5px;
     }
   }
-
-    
-  
+  &__person {
+    display: flex;
+    &-cart {
+      margin-top: 1px;
+    }
+  }
 
   &__burger {
     margin-top: 32px;
@@ -97,11 +40,62 @@
   }
 }
 
-.header {
-  &__person {
-    display: flex;
-    &-cart {
-      margin-top: 1px;
+.header__search {
+  margin-top: 26px;
+  position: relative;
+
+  &-input {
+    width: 320px;
+    padding-left: 40px;
+    border-radius: 4px;
+    height: 44px;
+    border: 1px solid var(--gray-light);
+
+    &:focus {
+      border: 1px solid var(--brown);
+    }
+  }
+
+  &-button {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    stroke: #a6a6a8;
+  }
+}
+
+.header__menu {
+  margin-top: 40px;
+  display: flex;
+  margin-left: 40px;
+
+  &-link {
+    padding: 0 14px 5px;
+    position: relative;
+    font-weight: 500;
+    color: var(--black);
+
+    &:hover {
+      transition: 0.3s;
+      color: var(--brown);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      display: block;
+      background: none repeat scroll 0 0 transparent;
+      height: 2px;
+      width: 0;
+      background: var(--brown);
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    }
+
+    &:hover::after {
+      width: 100%;
+      left: 0;
     }
   }
 }
